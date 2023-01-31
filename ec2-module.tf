@@ -8,7 +8,7 @@ resource "aws_instance"  "Monda-application-server" {
     
     tags = {
 
-        name = "aws_instance"  "Monda-application-server"
+        name = "Monda-application-server"
     }
   
 }
