@@ -3,10 +3,12 @@ resource "aws_security_group" "instance-web-server" {
     description = "allow ssh traffic web server"
     vpc_id = aws_vpc.main-VPC.id 
 
-    ingress =   {
+    ingress = [ {
       cidr_blocks = [ "0.0.0.0-0" ]
       from_port = 22
       protocol = "tcp"
-      to_port = 22
-    }
+      to_port =22
+    } ]
+
+    
 }
