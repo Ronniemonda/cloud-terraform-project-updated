@@ -4,7 +4,7 @@ resource "aws_instance"  "Monda-application-server" {
     key_name = "Monda-application"
     subnet_id = aws_subnet.public-subnet-1.id
     associate_public_ip_address = true
-    vpc_security_group_ids = aws_security_group.instance-web-server.id
+    vpc_security_group_ids = "aws_security_group.instance-web-server.id"
     
     tags = {
 
